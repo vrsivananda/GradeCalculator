@@ -23,6 +23,9 @@
       <height>22</height>
      </rect>
     </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
     <property name="orientation">
      <enum>Qt::Horizontal</enum>
     </property>
@@ -35,6 +38,9 @@
       <width>160</width>
       <height>22</height>
      </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
     </property>
     <property name="orientation">
      <enum>Qt::Horizontal</enum>
@@ -101,6 +107,9 @@
       <height>22</height>
      </rect>
     </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
    </widget>
    <widget class="QSpinBox" name="AssSpinBox2">
     <property name="geometry">
@@ -111,6 +120,9 @@
       <height>22</height>
      </rect>
     </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
    </widget>
    <widget class="QSlider" name="AssSlider3">
     <property name="geometry">
@@ -120,6 +132,9 @@
       <width>160</width>
       <height>22</height>
      </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
     </property>
     <property name="orientation">
      <enum>Qt::Horizontal</enum>
@@ -134,6 +149,9 @@
       <height>22</height>
      </rect>
     </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
    </widget>
    <widget class="QSpinBox" name="MidSpinBox1">
     <property name="geometry">
@@ -144,6 +162,9 @@
       <height>22</height>
      </rect>
     </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
    </widget>
    <widget class="QSpinBox" name="FinSpinBox1">
     <property name="geometry">
@@ -153,6 +174,9 @@
       <width>42</width>
       <height>22</height>
      </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
     </property>
    </widget>
    <widget class="QLabel" name="MidLabel1">
@@ -190,6 +214,9 @@
       <height>22</height>
      </rect>
     </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
     <property name="orientation">
      <enum>Qt::Horizontal</enum>
     </property>
@@ -202,6 +229,9 @@
       <width>160</width>
       <height>22</height>
      </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
     </property>
     <property name="orientation">
      <enum>Qt::Horizontal</enum>
@@ -268,6 +298,9 @@
       <height>22</height>
      </rect>
     </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
    </widget>
    <widget class="QLabel" name="AssLabel4">
     <property name="geometry">
@@ -291,6 +324,9 @@
       <height>22</height>
      </rect>
     </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
    </widget>
    <widget class="QSpinBox" name="AssSpinBox4">
     <property name="geometry">
@@ -300,6 +336,9 @@
       <width>42</width>
       <height>22</height>
      </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
     </property>
    </widget>
    <widget class="QLabel" name="AssLabel5">
@@ -337,6 +376,9 @@
       <height>22</height>
      </rect>
     </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
     <property name="orientation">
      <enum>Qt::Horizontal</enum>
     </property>
@@ -349,6 +391,9 @@
       <width>160</width>
       <height>22</height>
      </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
     </property>
     <property name="orientation">
      <enum>Qt::Horizontal</enum>
@@ -363,6 +408,9 @@
       <height>22</height>
      </rect>
     </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
     <property name="orientation">
      <enum>Qt::Horizontal</enum>
     </property>
@@ -376,6 +424,9 @@
       <height>22</height>
      </rect>
     </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
     <property name="orientation">
      <enum>Qt::Horizontal</enum>
     </property>
@@ -388,6 +439,9 @@
       <width>42</width>
       <height>22</height>
      </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
     </property>
    </widget>
    <widget class="QLabel" name="MidLabel2">
@@ -403,6 +457,66 @@
      <string>Midterm 2</string>
     </property>
    </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>519</x>
+      <y>239</y>
+      <width>131</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Schemas:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="TestLabel">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>280</y>
+      <width>241</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TestLabel</string>
+    </property>
+   </widget>
+   <zorder>groupBox</zorder>
+   <zorder>AssSlider1</zorder>
+   <zorder>AssSlider2</zorder>
+   <zorder>AssLabel1</zorder>
+   <zorder>AssLabel2</zorder>
+   <zorder>AssLabel3</zorder>
+   <zorder>label_4</zorder>
+   <zorder>AssSpinBox1</zorder>
+   <zorder>AssSpinBox2</zorder>
+   <zorder>AssSlider3</zorder>
+   <zorder>AssSpinBox3</zorder>
+   <zorder>MidSpinBox1</zorder>
+   <zorder>FinSpinBox1</zorder>
+   <zorder>MidLabel1</zorder>
+   <zorder>FinLabel1</zorder>
+   <zorder>MidSlider1</zorder>
+   <zorder>FinSlider1</zorder>
+   <zorder>SchemaRadioButton1</zorder>
+   <zorder>SchemaRadioButton2</zorder>
+   <zorder>OSLabel1</zorder>
+   <zorder>OSLabel2</zorder>
+   <zorder>AssSpinBox6</zorder>
+   <zorder>AssLabel4</zorder>
+   <zorder>AssSpinBox5</zorder>
+   <zorder>AssSpinBox4</zorder>
+   <zorder>AssLabel5</zorder>
+   <zorder>AssLabel6</zorder>
+   <zorder>AssSlider6</zorder>
+   <zorder>AssSlider4</zorder>
+   <zorder>AssSlider5</zorder>
+   <zorder>MidSlider2</zorder>
+   <zorder>MidSpinBox2</zorder>
+   <zorder>MidLabel2</zorder>
+   <zorder>TestLabel</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">

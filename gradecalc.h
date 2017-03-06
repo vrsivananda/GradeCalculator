@@ -17,6 +17,11 @@ public:
 
 private slots:
 
+    void computeGrades();
+
+
+    //*******SIGNALS AND SLOTS*******
+
     // AssSlider Signals
     void on_AssSlider1_valueChanged(int value);
     void on_AssSlider2_valueChanged(int value);
@@ -49,8 +54,36 @@ private slots:
     void on_FinSpinBox1_valueChanged(int arg1);
 
 
+
+
+    //*******SCHEMAS*******
+    void on_SchemaRadioButton1_clicked();
+    void on_SchemaRadioButton2_clicked();
+
+
+
 private:
     Ui::GradeCalc *ui;
+
+    double Ass1 = 0;
+    double Ass2 = 0;
+    double Ass3 = 0;
+    double Ass4 = 0;
+    double Ass5 = 0;
+    double Ass6 = 0;
+    double Mid1 = 0;
+    double Mid2 = 0;
+    double Fin1 = 0;
+
+    double ComputedGrade = 0;
+
+    bool schemaA = true;
+    bool schemaB = false;
+
+
+
+
+
 };
 
 #endif // GRADECALC_H
