@@ -16,29 +16,38 @@ public:
     ~GradeCalc();
 
 private slots:
-    void on_spinBox_valueChanged(int arg1);
 
-    void on_spinBox_2_valueChanged(int arg1);
+    // AssSlider Signals
+    void on_AssSlider1_valueChanged(int value);
+    void on_AssSlider2_valueChanged(int value);
+    void on_AssSlider3_valueChanged(int value);
+    void on_AssSlider4_valueChanged(int value);
+    void on_AssSlider5_valueChanged(int value);
+    void on_AssSlider6_valueChanged(int value);
 
-    void on_spinBox_3_valueChanged(int arg1);
+    //AssSpinBox Signals
+    void on_AssSpinBox1_valueChanged(int arg1);
+    void on_AssSpinBox2_valueChanged(int arg1);
+    void on_AssSpinBox3_valueChanged(int arg1);
+    void on_AssSpinBox4_valueChanged(int arg1);
+    void on_AssSpinBox5_valueChanged(int arg1);
+    void on_AssSpinBox6_valueChanged(int arg1);
 
-    void on_horizontalSlider_sliderMoved(int position);
+    //MidSlider Signals
+    void on_MidSlider1_valueChanged(int value);
+    void on_MidSlider2_valueChanged(int value);
 
-    void on_horizontalSlider_valueChanged(int value);
 
-    void on_horizontalSlider_2_valueChanged(int value);
+    //MidSpinBox Signals
+    void on_MidSpinBox1_valueChanged(int arg1);
+    void on_MidSpinBox2_valueChanged(int arg1);
 
-    void on_horizontalSlider_3_valueChanged(int value);
+    //FinSlider Signal
+    void on_FinSlider1_valueChanged(int value);
 
-    void on_horizontalScrollBar_valueChanged(int value);
+    //FinSpinBox Signal
+    void on_FinSpinBox1_valueChanged(int arg1);
 
-    void on_horizontalSlider_4_valueChanged(int value);
-
-    void on_horizontalSlider_5_valueChanged(int value);
-
-    void on_spinBox_4_valueChanged(int arg1);
-
-    void on_spinBox_5_valueChanged(int arg1);
 
 private:
     Ui::GradeCalc *ui;
