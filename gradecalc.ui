@@ -88,7 +88,7 @@
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>320</x>
       <y>20</y>
       <width>47</width>
       <height>31</height>
@@ -483,6 +483,26 @@
      <string>TestLabel</string>
     </property>
    </widget>
+   <widget class="QComboBox" name="ClassComboBox1">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>30</y>
+      <width>191</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>PIC10C: Advanced Programming</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Math31B: Single Variable Calculus</string>
+     </property>
+    </item>
+   </widget>
    <zorder>groupBox</zorder>
    <zorder>AssSlider1</zorder>
    <zorder>AssSlider2</zorder>
@@ -517,6 +537,7 @@
    <zorder>MidSpinBox2</zorder>
    <zorder>MidLabel2</zorder>
    <zorder>TestLabel</zorder>
+   <zorder>ClassComboBox1</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
@@ -527,6 +548,33 @@
      <height>21</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionSave"/>
+    <addaction name="actionSave_as"/>
+    <addaction name="separator"/>
+    <addaction name="actionDo_Nothing"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionWho_are_we"/>
+    <addaction name="actionWhat_is_this"/>
+    <addaction name="actionWhy_are_we_here"/>
+   </widget>
+   <widget class="QMenu" name="menuAdvice">
+    <property name="title">
+     <string>Advice</string>
+    </property>
+    <addaction name="actionHelp"/>
+    <addaction name="actionWhat_do_I_do_now"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuAbout"/>
+   <addaction name="menuAdvice"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -537,6 +585,46 @@
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionSave_as">
+   <property name="text">
+    <string>Save as</string>
+   </property>
+  </action>
+  <action name="actionDo_Nothing">
+   <property name="text">
+    <string>Do Nothing</string>
+   </property>
+  </action>
+  <action name="actionWho_are_we">
+   <property name="text">
+    <string>Who are we?</string>
+   </property>
+  </action>
+  <action name="actionWhat_is_this">
+   <property name="text">
+    <string>What is this?</string>
+   </property>
+  </action>
+  <action name="actionWhy_are_we_here">
+   <property name="text">
+    <string>Why are we here?</string>
+   </property>
+  </action>
+  <action name="actionHelp">
+   <property name="text">
+    <string>Help!</string>
+   </property>
+  </action>
+  <action name="actionWhat_do_I_do_now">
+   <property name="text">
+    <string>What do I do now?</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>

@@ -43,19 +43,41 @@ GradeCalc::~GradeCalc()
     delete ui;
 }
 
-//------computeGrades()-----------
+
+//***********************************************
+//***************COMPUTE THE GRADE***************
+//***********************************************
+
 void GradeCalc::computeGrades()
 {
-    if (schemaA ==true && schemaB ==false){
-         double avgAssGrade = (Ass1+Ass2+Ass3+Ass4+Ass5+Ass6)/6;
-         double avgMidtermGrade = (Mid1+Mid2)/2;
+    if(class1 ==true && class2 ==false){
 
-         ComputedGrade = avgAssGrade*25/100 + avgMidtermGrade*40/100 + Fin1*35/100;
+        if (schemaA ==true && schemaB ==false){
+             double avgAssGrade = (Ass1+Ass2+Ass3+Ass4+Ass5+Ass6)/6;
+             double avgMidtermGrade = (Mid1+Mid2)/2;
+
+             ComputedGrade = avgAssGrade*25/100 + avgMidtermGrade*40/100 + Fin1*35/100;
+        }
+        else if (schemaA ==false && schemaB ==true){
+            double avgAssGrade = (Ass1+Ass2+Ass3+Ass4+Ass5+Ass6)/6;
+
+            ComputedGrade = avgAssGrade*25/100 + Fin1*75/100;
+        }
     }
-    else if (schemaA ==false && schemaB ==true){
-        double avgAssGrade = (Ass1+Ass2+Ass3+Ass4+Ass5+Ass6)/6;
 
-        ComputedGrade = avgAssGrade*25/100 + Fin1*75/100;
+    else if(class1 ==false && class2 ==true){
+
+        if (schemaA ==true && schemaB ==false){
+             double avgAssGrade = (Ass1+Ass2+Ass3+Ass4)/4;
+             double avgMidtermGrade = (Mid1+Mid2)/2;
+
+             ComputedGrade = avgAssGrade*0.25 + avgMidtermGrade*0.35 + Fin1*0.40;
+        }
+        else if (schemaA ==false && schemaB ==true){
+            double avgAssGrade = (Ass1+Ass2+Ass3+Ass4)/4;
+
+            ComputedGrade = avgAssGrade*0.45 + Fin1*0.55;
+        }
     }
 
 
@@ -209,4 +231,23 @@ void GradeCalc::on_FinSpinBox1_valueChanged(int arg1)
 {
     Fin1 = arg1;
     ui->FinSlider1->setValue(arg1);
+}
+
+void GradeCalc::on_ClassComboBox1_activated(int value)
+{
+    if (value == 0)
+    {
+        class1 = true;
+        class2 = false;
+        computeGrades();
+        ui->TestLabel->setText(QString::number(Ass1));
+    }
+    else if (value == 1)
+    {
+        class1 = false;
+        class2 = true;
+        computeGrades();
+        ui->TestLabel->setText(QString::number(Ass2));
+    }
+
 }

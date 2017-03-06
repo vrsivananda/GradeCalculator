@@ -60,7 +60,8 @@ private slots:
     void on_SchemaRadioButton1_clicked();
     void on_SchemaRadioButton2_clicked();
 
-
+    //*********COMBO BOX********
+    void on_ClassComboBox1_activated(int value);
 
 private:
     Ui::GradeCalc *ui;
@@ -79,6 +80,9 @@ private:
 
     bool schemaA = true;
     bool schemaB = false;
+
+    bool class1 = true;
+    bool class2 = false;
 
 
 
