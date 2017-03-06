@@ -239,15 +239,27 @@ void GradeCalc::on_ClassComboBox1_activated(int value)
     {
         class1 = true;
         class2 = false;
+        ui->AssSlider5->setRange(0,100);
+        ui->AssSlider6->setRange(0,100);
+        ui->AssSpinBox5->setRange(0,100);
+        ui->AssSpinBox6->setRange(0,100);
         computeGrades();
-        ui->TestLabel->setText(QString::number(Ass1));
     }
     else if (value == 1)
     {
         class1 = false;
         class2 = true;
+        ui->AssSlider5->setValue(0);
+        ui->AssSlider6->setValue(0);
+        ui->AssSpinBox5->setValue(0);
+        ui->AssSpinBox6->setValue(0);
+
+        ui->AssSlider5->setRange(0,0);
+        ui->AssSlider6->setRange(0,0);
+        ui->AssSpinBox5->setRange(0,0);
+        ui->AssSpinBox6->setRange(0,0);
+
         computeGrades();
-        ui->TestLabel->setText(QString::number(Ass2));
     }
 
 }

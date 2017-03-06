@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1010</width>
+    <width>1023</width>
     <height>505</height>
    </rect>
   </property>
@@ -14,494 +14,333 @@
    <string>GradeCalc</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QSlider" name="AssSlider1">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>90</y>
-      <width>160</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="maximum">
-     <number>100</number>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
-   <widget class="QSlider" name="AssSlider2">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>140</y>
-      <width>160</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="maximum">
-     <number>100</number>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
-   <widget class="QLabel" name="AssLabel1">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>90</y>
-      <width>71</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Assignment 1</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="AssLabel2">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>130</y>
-      <width>71</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Assignment 2</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="AssLabel3">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>180</y>
-      <width>71</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Assignment 3</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_4">
-    <property name="geometry">
-     <rect>
-      <x>320</x>
-      <y>20</y>
-      <width>47</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Course</string>
-    </property>
-   </widget>
-   <widget class="QSpinBox" name="AssSpinBox1">
-    <property name="geometry">
-     <rect>
-      <x>300</x>
-      <y>90</y>
-      <width>42</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="maximum">
-     <number>100</number>
-    </property>
-   </widget>
-   <widget class="QSpinBox" name="AssSpinBox2">
-    <property name="geometry">
-     <rect>
-      <x>300</x>
-      <y>140</y>
-      <width>42</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="maximum">
-     <number>100</number>
-    </property>
-   </widget>
-   <widget class="QSlider" name="AssSlider3">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>190</y>
-      <width>160</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="maximum">
-     <number>100</number>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
-   <widget class="QSpinBox" name="AssSpinBox3">
-    <property name="geometry">
-     <rect>
-      <x>300</x>
-      <y>190</y>
-      <width>42</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="maximum">
-     <number>100</number>
-    </property>
-   </widget>
-   <widget class="QSpinBox" name="MidSpinBox1">
-    <property name="geometry">
-     <rect>
-      <x>730</x>
-      <y>90</y>
-      <width>42</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="maximum">
-     <number>100</number>
-    </property>
-   </widget>
-   <widget class="QSpinBox" name="FinSpinBox1">
-    <property name="geometry">
-     <rect>
-      <x>730</x>
-      <y>190</y>
-      <width>42</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="maximum">
-     <number>100</number>
-    </property>
-   </widget>
-   <widget class="QLabel" name="MidLabel1">
-    <property name="geometry">
-     <rect>
-      <x>450</x>
-      <y>90</y>
-      <width>47</width>
-      <height>13</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Midterm 1</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="FinLabel1">
-    <property name="geometry">
-     <rect>
-      <x>450</x>
-      <y>190</y>
-      <width>47</width>
-      <height>13</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Final</string>
-    </property>
-   </widget>
-   <widget class="QSlider" name="MidSlider1">
-    <property name="geometry">
-     <rect>
-      <x>550</x>
-      <y>90</y>
-      <width>160</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="maximum">
-     <number>100</number>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
-   <widget class="QSlider" name="FinSlider1">
-    <property name="geometry">
-     <rect>
-      <x>550</x>
-      <y>190</y>
-      <width>160</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="maximum">
-     <number>100</number>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
-   <widget class="QRadioButton" name="SchemaRadioButton1">
-    <property name="geometry">
-     <rect>
-      <x>540</x>
-      <y>260</y>
-      <width>82</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Schema A</string>
-    </property>
-   </widget>
-   <widget class="QRadioButton" name="SchemaRadioButton2">
-    <property name="geometry">
-     <rect>
-      <x>540</x>
-      <y>300</y>
-      <width>82</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Schema B</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="OSLabel1">
-    <property name="geometry">
-     <rect>
-      <x>550</x>
-      <y>360</y>
-      <width>121</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Overall Score:</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="OSLabel2">
-    <property name="geometry">
-     <rect>
-      <x>690</x>
-      <y>370</y>
-      <width>47</width>
-      <height>13</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0.0</string>
-    </property>
-   </widget>
-   <widget class="QSpinBox" name="AssSpinBox6">
-    <property name="geometry">
-     <rect>
-      <x>300</x>
-      <y>340</y>
-      <width>42</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="maximum">
-     <number>100</number>
-    </property>
-   </widget>
-   <widget class="QLabel" name="AssLabel4">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>240</y>
-      <width>71</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Assignment 4</string>
-    </property>
-   </widget>
-   <widget class="QSpinBox" name="AssSpinBox5">
-    <property name="geometry">
-     <rect>
-      <x>300</x>
-      <y>290</y>
-      <width>42</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="maximum">
-     <number>100</number>
-    </property>
-   </widget>
-   <widget class="QSpinBox" name="AssSpinBox4">
-    <property name="geometry">
-     <rect>
-      <x>300</x>
-      <y>240</y>
-      <width>42</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="maximum">
-     <number>100</number>
-    </property>
-   </widget>
-   <widget class="QLabel" name="AssLabel5">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>280</y>
-      <width>71</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Assignment 5</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="AssLabel6">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>330</y>
-      <width>71</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Assignment 6</string>
-    </property>
-   </widget>
-   <widget class="QSlider" name="AssSlider6">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>340</y>
-      <width>160</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="maximum">
-     <number>100</number>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
-   <widget class="QSlider" name="AssSlider4">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>240</y>
-      <width>160</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="maximum">
-     <number>100</number>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
-   <widget class="QSlider" name="AssSlider5">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>290</y>
-      <width>160</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="maximum">
-     <number>100</number>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
-   <widget class="QSlider" name="MidSlider2">
-    <property name="geometry">
-     <rect>
-      <x>550</x>
-      <y>140</y>
-      <width>160</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="maximum">
-     <number>100</number>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
-   <widget class="QSpinBox" name="MidSpinBox2">
-    <property name="geometry">
-     <rect>
-      <x>730</x>
-      <y>140</y>
-      <width>42</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="maximum">
-     <number>100</number>
-    </property>
-   </widget>
-   <widget class="QLabel" name="MidLabel2">
-    <property name="geometry">
-     <rect>
-      <x>450</x>
-      <y>140</y>
-      <width>47</width>
-      <height>13</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Midterm 2</string>
-    </property>
-   </widget>
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>519</x>
-      <y>239</y>
-      <width>131</width>
+      <x>570</x>
+      <y>270</y>
+      <width>121</width>
       <height>91</height>
      </rect>
     </property>
     <property name="title">
      <string>Schemas:</string>
     </property>
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="2" column="0">
+      <widget class="QRadioButton" name="SchemaRadioButton2">
+       <property name="text">
+        <string>Schema B</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QRadioButton" name="SchemaRadioButton1">
+       <property name="text">
+        <string>Schema A</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
-   <widget class="QLabel" name="TestLabel">
+   <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
-      <x>730</x>
-      <y>280</y>
-      <width>241</width>
-      <height>91</height>
+      <x>110</x>
+      <y>70</y>
+      <width>381</width>
+      <height>341</height>
      </rect>
     </property>
-    <property name="text">
-     <string>TestLabel</string>
-    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="AssLabel1">
+       <property name="text">
+        <string>Assignment 1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QSlider" name="AssSlider1">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QSpinBox" name="AssSpinBox1">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="AssLabel2">
+       <property name="text">
+        <string>Assignment 2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QSlider" name="AssSlider2">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QSpinBox" name="AssSpinBox2">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="AssLabel3">
+       <property name="text">
+        <string>Assignment 3</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QSlider" name="AssSlider3">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QSpinBox" name="AssSpinBox3">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="AssLabel4">
+       <property name="text">
+        <string>Assignment 4</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QSlider" name="AssSlider4">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QSpinBox" name="AssSpinBox4">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="AssLabel5">
+       <property name="text">
+        <string>Assignment 5</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QSlider" name="AssSlider5">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QSpinBox" name="AssSpinBox5">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="AssLabel6">
+       <property name="text">
+        <string>Assignment 6</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QSlider" name="AssSlider6">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2">
+      <widget class="QSpinBox" name="AssSpinBox6">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
-   <widget class="QComboBox" name="ClassComboBox1">
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>70</y>
+      <width>371</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
+      <widget class="QLabel" name="MidLabel1">
+       <property name="text">
+        <string>Midterm 1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QSlider" name="MidSlider1">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QSpinBox" name="MidSpinBox1">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="MidLabel2">
+       <property name="text">
+        <string>Midterm 2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QSlider" name="MidSlider2">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QSpinBox" name="MidSpinBox2">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="FinLabel1">
+       <property name="text">
+        <string>Final</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QSlider" name="FinSlider1">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QSpinBox" name="FinSpinBox1">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>290</y>
+      <width>231</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="OSLabel1">
+       <property name="text">
+        <string>Overall Score:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="OSLabel2">
+       <property name="text">
+        <string>0.0</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
       <x>380</x>
       <y>30</y>
-      <width>191</width>
-      <height>21</height>
+      <width>251</width>
+      <height>31</height>
      </rect>
     </property>
-    <item>
-     <property name="text">
-      <string>PIC10C: Advanced Programming</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Math31B: Single Variable Calculus</string>
-     </property>
-    </item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Course</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="ClassComboBox1">
+       <item>
+        <property name="text">
+         <string>PIC10C: Advanced Programming</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Math31B: Single Variable Calculus</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
    </widget>
    <zorder>groupBox</zorder>
    <zorder>AssSlider1</zorder>
@@ -520,8 +359,6 @@
    <zorder>FinLabel1</zorder>
    <zorder>MidSlider1</zorder>
    <zorder>FinSlider1</zorder>
-   <zorder>SchemaRadioButton1</zorder>
-   <zorder>SchemaRadioButton2</zorder>
    <zorder>OSLabel1</zorder>
    <zorder>OSLabel2</zorder>
    <zorder>AssSpinBox6</zorder>
@@ -536,7 +373,6 @@
    <zorder>MidSlider2</zorder>
    <zorder>MidSpinBox2</zorder>
    <zorder>MidLabel2</zorder>
-   <zorder>TestLabel</zorder>
    <zorder>ClassComboBox1</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
@@ -544,7 +380,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1010</width>
+     <width>1023</width>
      <height>21</height>
     </rect>
    </property>
